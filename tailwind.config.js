@@ -1,4 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
@@ -21,11 +20,6 @@ module.exports = {
                 blue: colors.sky,
                 gray: colors.blueGray,
                 purple: colors.violet,
-            },
-            fontFamily: {
-                merriweather: ['Merriweather', ...defaultTheme.fontFamily.serif],
-                mono: ['Source Code Pro', ...defaultTheme.fontFamily.mono],
-                sans: ['Work Sans', ...defaultTheme.fontFamily.sans],
             },
             textColor: {
                 github: '#171515',
