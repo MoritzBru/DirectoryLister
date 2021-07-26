@@ -18,13 +18,11 @@ module.exports = {
         extend: {
             colors: {
                 primary: colors.cyan,
+                secondary: colors.orange,
                 primaryDark: colors.cyan,
+                secondaryDark: colors.orange,
                 gray: colors.blueGray,
             },
-            textColor: {
-                github: '#171515',
-                twitter: '#1DA1F2'
-            }
         }
     },
     variants: {
