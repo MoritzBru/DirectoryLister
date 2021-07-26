@@ -17,9 +17,9 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                blue: colors.sky,
+                primary: colors.cyan,
+                primaryDark: colors.cyan,
                 gray: colors.blueGray,
-                purple: colors.violet,
             },
             textColor: {
                 github: '#171515',

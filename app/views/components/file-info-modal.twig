@@ -3,7 +3,7 @@
     @show-file-info.window="show($event.detail.file)" x-transition:enter.opacity x-cloak
 >
     <div x-show="!loading" x-transition:enter @click.away="hide()" class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-800 dark:text-white">
-        <header class="flex justify-between items-center bg-blue-600 p-4 dark:bg-purple-700">
+        <header class="flex justify-between items-center bg-primary-600 p-4 dark:bg-primaryDark-700">
             <i class="fas fa-info-circle fa-lg text-white"></i>
 
             <div class="items-center text-xl text-white font-mono mx-4" x-text="title"></div>

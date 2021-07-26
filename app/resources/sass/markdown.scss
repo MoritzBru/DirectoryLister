@@ -2,10 +2,10 @@
     @apply break-words;
 
     a {
-        @apply text-blue-600 underline;
+        @apply text-primary-600 underline;
 
         &:hover {
-            @apply text-blue-800;
+            @apply text-primary-800;
         }
     }
 
@@ -108,12 +108,12 @@
     }
 }
 
-#app.dark .markdown {
+.dark .markdown {
     a {
-        @apply text-purple-600;
+        @apply text-primaryDark-600;
 
         &:hover {
-            @apply text-purple-800;
+            @apply text-primaryDark-800;
         }
     }
 
