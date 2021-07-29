@@ -10,6 +10,7 @@ powered_by: Powered by
 legal: Imprint
 scroll_to_top: Scroll to Top
 toggle_theme: Toggle Light/Dark Mode
+parent_dir: Parent Directory
 
 error:
   directory_not_found: Directory does not exist

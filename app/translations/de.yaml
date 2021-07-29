@@ -10,6 +10,7 @@ powered_by: Unterstützt von
 legal: Impressum
 scroll_to_top: Nach oben Scrollen
 toggle_theme: Schalten Sie den Hell/Dunkel-Modus um
+parent_dir: Überverzeichnis
 
 error:
   directory_not_found: Verzeichnis nicht gefunden

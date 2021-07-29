@@ -1,28 +1,28 @@
-<div class="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50 p-4 z-50 dark:bg-gray-600 dark:bg-opacity-50"
+{# <div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-gray-800 bg-opacity-50 dark:bg-gray-600 dark:bg-opacity-50"
     x-data="file-info-modal" x-show="visible" @click.self="hide()" @keyup.escape.window="hide()"
     @show-file-info.window="show($event.detail.file)" x-transition:enter.opacity x-cloak
 >
-    <div x-show="!loading" x-transition:enter @click.away="hide()" class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-800 dark:text-white">
-        <header class="flex justify-between items-center bg-primary-600 p-4 dark:bg-primaryDark-700">
-            <i class="fas fa-info-circle fa-lg text-white"></i>
+    <div x-show="!loading" x-transition:enter @click.away="hide()" class="overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 dark:text-white">
+        <header class="flex items-center justify-between p-4 bg-primary-600 dark:bg-primaryDark-700">
+            <i class="text-white fas fa-info-circle fa-lg"></i>
 
-            <div class="items-center text-xl text-white font-mono mx-4" x-text="title"></div>
+            <div class="items-center mx-4 font-mono text-xl text-white" x-text="title"></div>
 
-            <button @click="hide()" class="flex justify-center items-center rounded-full w-6 h-6 text-gray-900 text-opacity-50 text-sm hover:bg-red-700 hover:text-white hover:shadow">
+            <button @click="hide()" class="flex items-center justify-center w-6 h-6 text-sm text-gray-900 text-opacity-50 rounded-full hover:bg-red-700 hover:text-white hover:shadow">
                 <i class="fas fa-times"></i>
             </button>
         </header>
 
-        <content class="flex justify-center items-center p-4">
+        <content class="flex items-center justify-center p-4">
             <div class="overflow-x-auto">
-                <p class="font-thin text-2xl text-gray-600 m-4" x-if="error" x-text="error"></p>
+                <p class="m-4 text-2xl font-thin text-gray-600" x-if="error" x-text="error"></p>
 
                 <table x-if="error === undefined" class="table-auto">
                     <tbody>
                         <template x-for="[name, value] in Object.entries(hashes)" :key="name">
                             <tr>
-                                <td class="border font-bold px-4 py-2" x-text="name"></td>
-                                <td class="border font-mono px-4 py-2" x-text="value"></td>
+                                <td class="px-4 py-2 font-bold border" x-text="name"></td>
+                                <td class="px-4 py-2 font-mono border" x-text="value"></td>
                             </tr>
                         </template>
                     </tbody>
@@ -31,5 +31,6 @@
         </content>
     </div>
 
-    <i class="fas fa-spinner fa-pulse fa-5x text-white" x-show="loading"></i>
-</div>
+    <i class="text-white fas fa-spinner fa-pulse fa-5x" x-show="loading"></i>
+</div> #}
+

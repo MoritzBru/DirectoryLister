@@ -1,11 +1,12 @@
 <a
     href="{{ parentDir ? parent_url(path) : file_url(file.getPathname) }}"
-    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-100 hover:shadow dark:hover:bg-primaryDark-700"
+    class="flex flex-col items-center font-mono rounded-lg group hover:bg-gray-200 dark:hover:bg-gray-700"
+    title="{{ parentDir ? parent_url(path) : file_url(file.getPathname) }}"
 >
-    <div class="flex justify-between items-center p-4 w-full">
+    <div class="flex items-center justify-between w-full p-4">
         <div class="pr-2">
             {% if parentDir %}
-                <i class="fas fa-level-up-alt fa-fw fa-lg"></i>
+                <i class="fas fa-level-up-alt fa-flip-horizontal fa-fw fa-lg"></i>
             {% else %}
                 {{ icon(file) | raw }}
             {% endif %}
@@ -15,17 +16,17 @@
             {{ parentDir ? '..' : file.getRelativePathname }}
         </div>
 
-        {% if file.isFile %}
+        {# {% if file.isFile %}
             <div class="ml-2">
                 <button title="{{ translate('file.info') }}" @click.prevent="$dispatch('show-file-info', { file: '{{ url(file.getPathname) | escape('js') }}' })"
-                    class="justify-center items-center rounded-full w-8 h-8 -m-1 md:invisible hover:bg-gray-300 hover:shadow dark:hover:bg-primaryDark-900 group-hover:visible"
+                    class="items-center justify-center w-8 h-8 -m-1 rounded-full md:invisible hover:bg-gray-300 hover:shadow dark:hover:bg-primaryDark-900 group-hover:visible"
                 >
                     <i class="fas fa-info-circle"></i>
                 </button>
             </div>
-        {% endif %}
+        {% endif %} #}
 
-        <div class="hidden whitespace-nowrap text-right mx-2 w-1/6 sm:block">
+        <div class="hidden w-1/6 mx-2 text-right whitespace-nowrap sm:block">
             {% if parentDir or file.isDir %}
                     —
             {% else %}
@@ -33,7 +34,7 @@
             {% endif %}
         </div>
 
-        <div class="hidden whitespace-nowrap text-right truncate ml-2 w-1/4 sm:block">
+        <div class="hidden w-1/4 ml-2 text-right truncate whitespace-nowrap sm:block">
             {{ parentDir ? '—' : modified_time(file) }}
         </div>
     </div>
