@@ -2,7 +2,7 @@
     <img src="directory-lister.svg" alt="Directory Lister" width="66%">
 </p>
 
-<p align="center">
+<!-- <p align="center">
     <a href="https://github.com/DirectoryLister/DirectoryLister/discussions"><img src="https://img.shields.io/badge/Join_the-Community-7b16ff.svg?style=for-the-badge" alt="Join our Community"></a>
     <a href="https://github.com/users/PHLAK/sponsorship"><img src="https://img.shields.io/badge/Become_a-Sponsor-cc4195.svg?style=for-the-badge" alt="Become a Sponsor"></a>
     <a href="https://paypal.me/ChrisKankiewicz"><img src="https://img.shields.io/badge/Make_a-Donation-006bb6.svg?style=for-the-badge" alt="One-time Donation"></a>
@@ -10,7 +10,7 @@
     <img alt="Packagist PHP Version Support" src="https://img.shields.io/packagist/php-v/phlak/directory-lister?style=flat-square">
     <a href="https://github.com/DirectoryLister/DirectoryLister/blob/master/LICENSE"><img src="https://img.shields.io/github/license/DirectoryLister/DirectoryLister?style=flat-square" alt="License"></a>
     <a href="https://github.com/DirectoryLister/DirectoryLister/actions" alt="Build Status"><img src="https://img.shields.io/github/checks-status/DirectoryLister/DirectoryLister/master?style=flat-square"></a>
-</p>
+</p> -->
 
 ---
 
