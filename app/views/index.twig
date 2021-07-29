@@ -3,34 +3,34 @@
 {% block content %}
     {% include "components/header.twig" %}
 
-    <div class="flex flex-col flex-grow container mx-auto px-4 xl:max-w-screen-xl dark:text-white">
+    <div class="container flex flex-col flex-grow px-4 mx-auto xl:max-w-screen-xl dark:text-white">
         <div class="my-4">
-            <div class="flex justify-between font-bold p-4">
-                <div class="flex-grow font-mono mr-2">
+            <div class="flex justify-between p-4 font-bold">
+                <div class="flex-grow mr-2 font-mono">
                     {{ translate('file.name') }}
                 </div>
 
-                <div class="font-mono text-right w-1/6 mx-2 hidden sm:block">
+                <div class="hidden w-1/6 mx-2 font-mono text-right sm:block">
                     {{ translate('file.size') }}
                 </div>
 
-                <div class="font-mono text-right w-1/4 ml-2 hidden sm:block">
+                <div class="hidden w-1/4 ml-2 font-mono text-right sm:block">
                     {{ translate('file.date') }}
                 </div>
             </div>
 
             <ul>
-                <li>
-                    {% if path and path != '.' %}
+                {% if path and path != '.' %}
+                    <li>
                         {{ include('components/file.twig', { parentDir: true }) }}
-                    {% endif %}
-                </li>
+                    </li>
+                {% endif %}
 
-                <li>
-                    {% for file in files %}
+                {% for file in files %}
+                    <li>
                         {{ include('components/file.twig') }}
-                    {% endfor %}
-                </li>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
 
