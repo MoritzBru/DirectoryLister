@@ -159,4 +159,19 @@ return [
      * Default value: 1000000000
      */
     'max_hash_size' => DI\env('MAX_HASH_SIZE', 1000000000),
+
+    /**
+     * Width of the logo in the header
+     *
+     * Default value: null
+     */
+    'logo_width' => DI\env('LOGO_WIDTH', null),
+    /**
+     * Height of the logo in the header
+     *
+     * Default value: null
+     */
+    'logo_height' => DI\env('LOGO_HEIGHT', null),
+
+
 ];
