@@ -2,9 +2,10 @@
     href="{{ parentDir ? parent_url(path) : file_url(file.getPathname) }}"
     class="flex flex-col items-center font-mono rounded-lg group hover:bg-gray-200 dark:hover:bg-gray-700"
     title="{{ parentDir ? parent_url(path) : file_url(file.getPathname) }}"
+    {{ parentDir or file.isDir ? '' : 'download' }}
 >
     <div class="flex items-center justify-between w-full p-4">
-        <div class="pr-2">
+        <div class="mr-3">
             {% if parentDir %}
                 <i class="fas fa-level-up-alt fa-flip-horizontal fa-fw fa-lg"></i>
             {% else %}
