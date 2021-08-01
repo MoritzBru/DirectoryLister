@@ -1,4 +1,4 @@
-ARTIFACT_FILES=$$(paste --delimiters ' ' --serial artifacts.include)
+ARTIFACT_FILES=$$(paste -d ' ' -s artifacts.include)
 ARTIFACT_NAME="DirectoryLister-$$(git describe --tags --exact-match HEAD 2> /dev/null || git rev-parse --short HEAD)"
 RUN := docker-compose run --rm app
 
